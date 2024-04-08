@@ -38,5 +38,3 @@ We encourage you to dive deeper into the notebook, tweak model hyperparameters, 
 Embark on this analytical journey to discover the potential of the Perceptron model in medical diagnosis and beyond.
 
 ---
-
-**Note**: This README serves as an overview of our repository. Detailed explanations, code, and analyses are available in the respective subdirectories.
