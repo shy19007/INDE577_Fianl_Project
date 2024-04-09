@@ -1,52 +1,51 @@
-# INDE 577 - Shaoyu Yan - Final Project - Data Science & Machine Learning
+# **Reinforcement Learning with Decision Trees/Regression Trees**
 
-**Instructor**: Randy R. Davila
+## **Introduction**
 
-## Course Description
+In this Jupyter notebook, we dive into an innovative application of Decision Trees and Regression Trees within a reinforcement learning framework, focusing on the diabetes dataset. Our goal is to model decision-making processes that can aid in diabetes risk prediction and management strategies.
 
-Welcome to the capstone project repository for INDE 577 - Data Science and Machine Learning, led by Randy R. Davila. This course has traversed through an extensive array of data science and machine learning topics, spanning supervised, unsupervised, and reinforcement learning domains. Throughout this journey, we've engaged in hands-on applications, honed our Python programming skills, and embraced various data science methodologies.
+## **Algorithm**
 
-## Repository Layout
+### Decision Trees:
 
-Our repository is structured to provide a comprehensive exploration of machine learning applications, divided into four pivotal sections, each replete with in-depth implementations and insightful analysis:
+1. Initialization: We begin with the entire diabetes dataset as the root.
+2. Feature Selection: The most informative feature is selected for splitting the data.
+3. Recursive Splitting: We partition the dataset into subsets, which could represent different patient profiles based on their medical readings.
+4. Stopping Criteria: We stop splitting when we meet certain conditions such as maximum depth or minimum impurity decrease.
+5. Leaf Node Assignment: At the terminal nodes, we assign class labels representing the prediction of diabetes presence or absence.
 
-### Supervised Learning
+### Reinforcement Learning with Trees:
 
-This segment showcases our endeavors with various supervised learning techniques:
+1. Rule Definition: We set up rules in the tree for actions, such as medical interventions or lifestyle changes.
+2. Reward Assignment: Rewards (or penalties) are designated at the leaves based on the effectiveness of the recommended actions in managing diabetes risk.
+3. Tree Updates: Employ reinforcement learning algorithms to update decision paths in the tree as new patient data or outcomes are observed.
 
-- **Perceptron**: Our gateway to linear classification models.
-- **Logistic Regression**: Employed for binary and multiclass classification challenges.
-- **Neural Network (MLP)**: Diving deep with multi-layer perceptrons.
-- **Decision/Regression Trees**: Navigating classification and regression via tree-based models.
-- **Ensemble Learning**: Leveraging the collective strength of methods like Random Forest.
-- **k-Nearest Neighbors (KNN)**: The quintessence of non-parametric classification.
+## **Advantages and Disadvantages**
 
-### Unsupervised Learning
+### Advantages:
 
-Here, we unravel the nuances of unsupervised learning methodologies:
+1. Interpretability: Trees offer a clear visualization of the decision paths.
+2. Mixed Data Handling: Trees can handle various data types found in medical datasets.
+3. Simpler Preprocessing: They work well without the need for data normalization.
+4. Transparency: The decision-making process is open and easily followed.
 
-- **k-Means Clustering**: Grouping data points with this clustering classic.
-- **DBSCAN**: Tackling spatial clustering challenges in data with noise.
-- **Principal Component Analysis (PCA)**: Reducing dimensionality to enhance feature understanding.
+### Disadvantages:
 
-### Reinforcement Learning
+1. Overfitting Risk: Trees can create overly complex structures that do not generalize well.
+2. Data Sensitivity: They may react strongly to minor variations in patient data.
+3. Dominance Bias: There's a risk of bias toward more frequent outcomes.
+4. Expressiveness: Trees might struggle to capture more complex relationships in data without ensembling techniques.
 
-Within this section, we embark on an exploration of reinforcement learning basics:
+## **Implementation**
 
-- **Tabular Reinforcement Learning**: An introductory dive into the fundamentals of reinforcement learning.
+### Decision Tree for Classification:
 
-### Datasets
+We apply a Decision Tree Classifier to the diabetes dataset, aiming to classify individuals' risk levels into 'diabetic' or 'non-diabetic' based on their medical features.
 
-The datasets folder contains various datasets used in our implementations:
+### Reinforcement Learning Tree for Continuous Prediction:
 
-XXX
+We transform the Decision Tree into a Regression Tree framework for continuous prediction, assessing the risk level on a continuous scale, which can then be used to tailor personalized patient recommendations.
 
-## Repository Navigation
+## **Conclusion**
 
-To delve into our projects, simply navigate to the designated folders for supervised learning, unsupervised learning, reinforcement learning, and datasets. Within each folder, you'll find comprehensive README.md files and Jupyter notebooks that bring our implementations to life.
-
-We extend our gratitude for your interest in our capstone project repository. It's our hope that you'll find the presented implementations and analyses both enlightening and meticulously organized.
-
----
-
-**Note**: This README serves as an overview of our repository. Detailed explanations, code, and analyses are available in the respective subdirectories.
+Through this notebook, we have integrated Decision Trees and Regression Trees into a reinforcement learning paradigm using the diabetes dataset. These models demonstrate promising capabilities for guiding decisions in clinical settings, where dynamic adjustments to strategies are essential. The transparent nature of trees, combined with the feedback loop provided by reinforcement learning, sets a foundation for developing robust predictive tools in healthcare. Future explorations may refine the models, introduce ensemble methods, or integrate more complex state-action spaces for nuanced decision-making.
