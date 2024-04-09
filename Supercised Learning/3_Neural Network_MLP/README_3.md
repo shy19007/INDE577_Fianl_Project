@@ -1,52 +1,29 @@
-# INDE 577 - Shaoyu Yan - Final Project - Data Science & Machine Learning
+# **Multilayer Perceptron (MLP) in Neural Network Analysis**
 
-**Instructor**: Randy R. Davila
+**Introduction**
 
-## Course Description
+The Multilayer Perceptron (MLP), an integral component of the feedforward artificial neural network family, stands as a paragon of adaptability in the realm of deep learning. Designed to discern complex patterns within datasets, the MLP's structured layers make it an indispensable asset for a spectrum of tasks, including classification, regression, and pattern detection.
 
-Welcome to the capstone project repository for INDE 577 - Data Science and Machine Learning, led by Randy R. Davila. This course has traversed through an extensive array of data science and machine learning topics, spanning supervised, unsupervised, and reinforcement learning domains. Throughout this journey, we've engaged in hands-on applications, honed our Python programming skills, and embraced various data science methodologies.
+**Algorithm**
 
-## Repository Layout
+The MLP's core algorithm is a dance of two parts: feedforward and backpropagation. During feedforward propagation, data are processed layer by layer, transformed by weighted sums and non-linear activation functions such as ReLU and tanh. This journey through the network culminates in a prediction. In the subsequent act, backpropagation takes the stage. Here, the algorithm computes errors by contrasting predictions against actual values and employs gradient descent to refine the weights. This iterative refinement is the essence of the network's learning process.
 
-Our repository is structured to provide a comprehensive exploration of machine learning applications, divided into four pivotal sections, each replete with in-depth implementations and insightful analysis:
+**Implementation**
 
-### Supervised Learning
+Implementing an MLP for the MNIST dataset involved preprocessing steps such as vectorizing images and normalizing pixel values. Leveraging TensorFlow and Keras, a sequential model architecture was constructed with dense layers primed for classification tasks. The model was trained iteratively, demonstrating rapid improvement in predictive accuracy and a decline in training loss, indicative of effective learning.
 
-This segment showcases our endeavors with various supervised learning techniques:
+**Advantages and Disadvantages**
 
-- **Perceptron**: Our gateway to linear classification models.
-- **Logistic Regression**: Employed for binary and multiclass classification challenges.
-- **Neural Network (MLP)**: Diving deep with multi-layer perceptrons.
-- **Decision/Regression Trees**: Navigating classification and regression via tree-based models.
-- **Ensemble Learning**: Leveraging the collective strength of methods like Random Forest.
-- **k-Nearest Neighbors (KNN)**: The quintessence of non-parametric classification.
+MLPs shine due to their versatility and prowess in capturing non-linear relationships within data. Their scalable architecture allows for autonomous feature learning, supported extensively by machine learning frameworks. However, the potential for overfitting, the need for meticulous hyperparameter tuning, computational intensity, and challenges in interpretability are pitfalls that require careful navigation.
 
-### Unsupervised Learning
+**Training and Evaluation through MNIST**
 
-Here, we unravel the nuances of unsupervised learning methodologies:
+An examination of the MLP's performance on the MNIST dataset showcased a commendable learning capacity. The network was trained over multiple epochs, showing a notable increase in accuracy and decrease in training cost. The model's ability to generalize from training to unseen data was impressive, marking a successful application of MLP in digit recognition tasks.
 
-- **k-Means Clustering**: Grouping data points with this clustering classic.
-- **DBSCAN**: Tackling spatial clustering challenges in data with noise.
-- **Principal Component Analysis (PCA)**: Reducing dimensionality to enhance feature understanding.
+**Visualization and Insights**
 
-### Reinforcement Learning
+The model's predictions were visualized against the actual labels of the MNIST test set, using matplotlib to showcase the effective learning and generalization of the network. The alignment between predicted and true labels was evident, validating the MLP's classification capabilities.
 
-Within this section, we embark on an exploration of reinforcement learning basics:
+**Conclusion**
 
-- **Tabular Reinforcement Learning**: An introductory dive into the fundamentals of reinforcement learning.
-
-### Datasets
-
-The datasets folder contains various datasets used in our implementations:
-
-XXX
-
-## Repository Navigation
-
-To delve into our projects, simply navigate to the designated folders for supervised learning, unsupervised learning, reinforcement learning, and datasets. Within each folder, you'll find comprehensive README.md files and Jupyter notebooks that bring our implementations to life.
-
-We extend our gratitude for your interest in our capstone project repository. It's our hope that you'll find the presented implementations and analyses both enlightening and meticulously organized.
-
----
-
-**Note**: This README serves as an overview of our repository. Detailed explanations, code, and analyses are available in the respective subdirectories.
+This exploration of MLPs, anchored by the MNIST and extended to the penguin datasets, illuminates the model's facility in learning and refinement. The observed performance underscores the MLP's classification acumen and speaks to its broad applicability. As we merge theory with application, MLPs emerge as dynamic, potent instruments poised to drive future innovation in AI.
