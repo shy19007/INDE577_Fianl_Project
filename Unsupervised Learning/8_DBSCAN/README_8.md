@@ -1,52 +1,51 @@
-# INDE 577 - Shaoyu Yan - Final Project - Data Science & Machine Learning
+# **Global Refugee Trends Analysis with DBSCAN Clustering**
 
-**Instructor**: Randy R. Davila
+## **Introduction**
 
-## Course Description
+In this project, we delve into the complexities of global refugee movements from 1951 to 2015, employing the DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm. This robust unsupervised learning method excels at discovering intricate cluster patterns within data, which is paramount when analyzing phenomena with high variability such as refugee trends. DBSCAN's unique approach of defining clusters based on data point density, rather than pre-set shapes, equips us with the nuanced analysis required for such socio-politically influenced data.
 
-Welcome to the capstone project repository for INDE 577 - Data Science and Machine Learning, led by Randy R. Davila. This course has traversed through an extensive array of data science and machine learning topics, spanning supervised, unsupervised, and reinforcement learning domains. Throughout this journey, we've engaged in hands-on applications, honed our Python programming skills, and embraced various data science methodologies.
+## **About the DBSCAN Algorithm**
 
-## Repository Layout
+The DBSCAN algorithm commences by estimating the local density around each point, designating core points, and creating clusters based on densely connected areas in the dataset. Its capacity to discern noise or outliers enhances the clarity of the analysis, setting apart years with atypical refugee movements. The primary strength of DBSCAN lies in its density-based clustering mechanism, allowing it to intuitively form clusters and adjust to the data's inherent structure without predefining the cluster count.
 
-Our repository is structured to provide a comprehensive exploration of machine learning applications, divided into four pivotal sections, each replete with in-depth implementations and insightful analysis:
+## **Advantages and Disadvantages in the Context of Refugee Data**
 
-### Supervised Learning
+### Advantages:
 
-This segment showcases our endeavors with various supervised learning techniques:
+- Flexibility in Cluster Formation: DBSCAN is adept at identifying clusters that are not just varied in size and density but also irregular in shape, which is often the case with geopolitical data.
 
-- **Perceptron**: Our gateway to linear classification models.
-- **Logistic Regression**: Employed for binary and multiclass classification challenges.
-- **Neural Network (MLP)**: Diving deep with multi-layer perceptrons.
-- **Decision/Regression Trees**: Navigating classification and regression via tree-based models.
-- **Ensemble Learning**: Leveraging the collective strength of methods like Random Forest.
-- **k-Nearest Neighbors (KNN)**: The quintessence of non-parametric classification.
+- Outlier Detection: It efficiently distinguishes outliers, which in this context could represent years with exceptional refugee movements.
 
-### Unsupervised Learning
+- No Preset Clusters: The algorithm does not necessitate a predefined number of clusters, an advantageous feature when dealing with historical data where trends are unknown or non-linear.
 
-Here, we unravel the nuances of unsupervised learning methodologies:
+- Handling Diverse Densities: It can manage datasets with non-uniform densities, typical in real-world data reflecting societal events.
 
-- **k-Means Clustering**: Grouping data points with this clustering classic.
-- **DBSCAN**: Tackling spatial clustering challenges in data with noise.
-- **Principal Component Analysis (PCA)**: Reducing dimensionality to enhance feature understanding.
+### Disadvantages:
 
-### Reinforcement Learning
+- Parameter Sensitivity: Selecting appropriate values for epsilon (ε) and minimum points (minPts) can be challenging and crucial for accurate clustering.
 
-Within this section, we embark on an exploration of reinforcement learning basics:
+- Curse of Dimensionality: As with many clustering algorithms, DBSCAN's performance might degrade with high-dimensional data.
 
-- **Tabular Reinforcement Learning**: An introductory dive into the fundamentals of reinforcement learning.
+- Resource Intensity: The computational demands can be significant when processing large datasets such as the global refugee dataset spanning decades.
 
-### Datasets
+## **Analysis Journey**
 
-The datasets folder contains various datasets used in our implementations:
+Utilizing this methodology, we have identified significant periods in global refugee movements that align with historical events. Our data points are categorized into coherent clusters that indicate normal trends, and outliers likely correspond to years with notable crises or policy shifts affecting refugee populations.
 
-XXX
+## **Working with the Notebook**
 
-## Repository Navigation
+To engage with this analysis:
 
-To delve into our projects, simply navigate to the designated folders for supervised learning, unsupervised learning, reinforcement learning, and datasets. Within each folder, you'll find comprehensive README.md files and Jupyter notebooks that bring our implementations to life.
+- Start with the notebook: Open the provided Jupyter notebook containing the DBSCAN implementation tailored for our refugee dataset.
 
-We extend our gratitude for your interest in our capstone project repository. It's our hope that you'll find the presented implementations and analyses both enlightening and meticulously organized.
+- Follow the code: Execute the sequential code cells to perform DBSCAN clustering on the dataset.
 
----
+- Visualize the results: Observe the clustering and outliers marked within the data.
 
-**Note**: This README serves as an overview of our repository. Detailed explanations, code, and analyses are available in the respective subdirectories.
+- Adjust DBSCAN parameters: Experiment with various epsilon (eps) and minimum samples (minPts) values to observe the effects on the clustering output.
+
+- Interpret the findings: Draw correlations between the clusters and historical socio-political events that may have influenced refugee trends.
+
+## **Concluding Thoughts**
+
+This project illustrates the practical application of DBSCAN in unraveling the temporal patterns of global refugee movements. By uncovering clusters that likely correspond to periods of relative stability or crisis, we gain valuable insights that can inform further research, policy-making, and humanitarian efforts. The DBSCAN algorithm, with its flexible and density-based clustering, has proven to be a potent tool in our analysis, providing a window into the complex dynamics of human displacement over time.
