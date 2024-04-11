@@ -39,7 +39,21 @@ Within this section, we embark on an exploration of reinforcement learning basic
 
 The datasets folder contains various datasets used in our implementations:
 
-XXX
+- **COVID-19 Symptoms:** This dataset captures an array of symptoms and demographic details aimed at predicting COVID-19 infection statuses.
+
+- **Cancer Data:** A collection of attributes used to assess cancer risk or detect its presence.
+
+- **Credit Card Customer Data:** Insights into customer profiles, vital for evaluating creditworthiness or designing financial products.
+
+- **Diabetes:** Medical records catering to the study of diabetes, facilitating the development of predictive models for diagnosis or progression of the disease.
+
+- **Fake Bills:** Features designed to distinguish genuine banknotes from counterfeit ones.
+
+- **MNIST Test:** The benchmark dataset for testing machine learning models on the task of handwritten digit recognition.
+
+- **Penguins:** Ecological data related to penguin species, useful in biodiversity research and ecological modeling.
+
+- **Raw Data (COVID-19 Symptoms):** The preliminary dataset concerning COVID-19 symptoms, serving as a substrate for cleaning and detailed analysis.
 
 ## Repository Navigation
 
