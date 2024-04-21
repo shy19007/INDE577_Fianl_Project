@@ -1,66 +1,29 @@
-# INDE 577 - Shaoyu Yan - Data Science & Machine Learning
+# **Unsupervised Learning Project Summaries for INDE 577**
 
-**Instructor**: Randy R. Davila
+In the Unsupervised Learning section of our capstone project for INDE 577 - Data Science and Machine Learning, we explore complex data sets through the lens of unsupervised algorithms to uncover intrinsic patterns and groupings without pre-labeled outcomes. Below are the summaries of three comprehensive projects that demonstrate the application and impact of unsupervised learning techniques in various domains:
 
-## Course Description
+## **Comprehensive Guide to k-Means Clustering on Credit Card Customer Data:**
 
-Welcome to the capstone project repository for INDE 577 - Data Science and Machine Learning, led by Randy R. Davila. This course has traversed through an extensive array of data science and machine learning topics, spanning supervised, unsupervised, and reinforcement learning domains. Throughout this journey, we've engaged in hands-on applications, honed our Python programming skills, and embraced various data science methodologies.
+- Focus: Segmentation of credit card customers using k-Means clustering to reveal patterns in customer behavior and preferences.
 
-## Repository Layout
+- Implementation: This project involves a detailed exploratory data analysis followed by the application of the k-Means clustering algorithm. Techniques like the Elbow Method and Silhouette Analysis help determine the optimal number of clusters.
 
-Our repository is structured to provide a comprehensive exploration of machine learning applications, divided into four pivotal sections, each replete with in-depth implementations and insightful analysis:
+- Outcome: The k-Means clustering effectively segments customers into distinct groups, providing actionable insights for targeted marketing and personalized service offerings, thereby enhancing customer engagement strategies.
 
-### Supervised Learning
+## **Global Refugee Trends Analysis with DBSCAN Clustering:**
 
-This segment showcases our endeavors with various supervised learning techniques:
+- Focus: Analysis of global refugee movements using the DBSCAN algorithm to identify trends and outliers in the data from 1951 to 2015.
 
-- **Perceptron**: Our gateway to linear classification models.
-- **Logistic Regression**: Employed for binary and multiclass classification challenges.
-- **Neural Network (MLP)**: Diving deep with multi-layer perceptrons.
-- **Decision/Regression Trees**: Navigating classification and regression via tree-based models.
-- **Ensemble Learning**: Leveraging the collective strength of methods like Random Forest.
-- **k-Nearest Neighbors (KNN)**: The quintessence of non-parametric classification.
+- Implementation: DBSCAN is applied to model the complexity of refugee movements, with its ability to handle noise and identify clusters of varying shapes and sizes proving critical for this application.
 
-### Unsupervised Learning
+- Outcome: The project uncovers significant patterns corresponding to historical events, offering a nuanced view of refugee trends over time. The flexibility of DBSCAN in cluster formation and outlier detection makes it particularly suited to socio-political datasets like refugee movements.
 
-Here, we unravel the nuances of unsupervised learning methodologies:
+## **Principal Component Analysis (PCA) on the Fake Bills Dataset:**
 
-- **k-Means Clustering**: Grouping data points with this clustering classic.
-- **DBSCAN**: Tackling spatial clustering challenges in data with noise.
-- **Principal Component Analysis (PCA)**: Reducing dimensionality to enhance feature understanding.
+- Focus: Application of PCA to reduce dimensionality in the Fake Bills dataset, aiming to distinguish between genuine and counterfeit banknotes.
 
-### Reinforcement Learning
+- Implementation: The PCA process involves standardizing the data, calculating the covariance matrix, and then extracting the principal components that capture the most variance.
 
-Within this section, we embark on an exploration of reinforcement learning basics:
+- Outcome: PCA successfully identifies key features that differentiate genuine bills from counterfeits, facilitating easier visualization and analysis of complex data sets. This approach not only aids in forensic analysis but also supports quality control and data exploration.
 
-- **Tabular Reinforcement Learning**: An introductory dive into the fundamentals of reinforcement learning.
-
-### Datasets
-
-The datasets folder contains various datasets used in our implementations:
-
-- **COVID-19 Symptoms:** This dataset captures an array of symptoms and demographic details aimed at predicting COVID-19 infection statuses.
-
-- **Cancer Data:** A collection of attributes used to assess cancer risk or detect its presence.
-
-- **Credit Card Customer Data:** Insights into customer profiles, vital for evaluating creditworthiness or designing financial products.
-
-- **Diabetes:** Medical records catering to the study of diabetes, facilitating the development of predictive models for diagnosis or progression of the disease.
-
-- **Fake Bills:** Features designed to distinguish genuine banknotes from counterfeit ones.
-
-- **MNIST Test:** The benchmark dataset for testing machine learning models on the task of handwritten digit recognition.
-
-- **Penguins:** Ecological data related to penguin species, useful in biodiversity research and ecological modeling.
-
-- **Raw Data (COVID-19 Symptoms):** The preliminary dataset concerning COVID-19 symptoms, serving as a substrate for cleaning and detailed analysis.
-
-## Repository Navigation
-
-To delve into our projects, simply navigate to the designated folders for supervised learning, unsupervised learning, reinforcement learning, and datasets. Within each folder, you'll find comprehensive README.md files and Jupyter notebooks that bring our implementations to life.
-
-We extend our gratitude for your interest in our capstone project repository. It's our hope that you'll find the presented implementations and analyses both enlightening and meticulously organized.
-
----
-
-**Note**: This README serves as an overview of our repository. Detailed explanations, code, and analyses are available in the respective subdirectories.
+These projects collectively illustrate the power of unsupervised learning in extracting value from unstructured or unlabeled data, addressing challenges across financial and humanitarian sectors. Each project not only deepens the understanding of specific algorithms but also provides insights into their practical applications, paving the way for future innovations in data-driven decision-making.

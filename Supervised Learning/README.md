@@ -1,66 +1,61 @@
-# INDE 577 - Shaoyu Yan - Data Science & Machine Learning
+# **Supervised Learning Project Summaries for INDE 577**
 
-**Instructor**: Randy R. Davila
+Welcome to the Supervised Learning section of our capstone project repository for INDE 577 - Data Science and Machine Learning. This section showcases our hands-on experience with a variety of supervised learning models applied to real-world datasets, each addressing unique challenges in healthcare and financial sectors. Below is a consolidated overview of the seven distinct projects undertaken:
 
-## Course Description
+## **Single Neuron Model - The Perceptron:**
 
-Welcome to the capstone project repository for INDE 577 - Data Science and Machine Learning, led by Randy R. Davila. This course has traversed through an extensive array of data science and machine learning topics, spanning supervised, unsupervised, and reinforcement learning domains. Throughout this journey, we've engaged in hands-on applications, honed our Python programming skills, and embraced various data science methodologies.
+- Focus: Binary classification of diabetes using the Perceptron model.
 
-## Repository Layout
+- Implementation: Implemented in a Jupyter notebook, this project involves loading the diabetes dataset, preprocessing, and utilizing the Perceptron for binary classification focused on features like glucose and BMI.
 
-Our repository is structured to provide a comprehensive exploration of machine learning applications, divided into four pivotal sections, each replete with in-depth implementations and insightful analysis:
+- Outcome: Despite its simplicity, the Perceptron effectively classifies diabetes presence, demonstrating foundational machine learning principles.
 
-### Supervised Learning
+## **Gradient Descent - Predictive Modeling for Diabetes Onset:**
 
-This segment showcases our endeavors with various supervised learning techniques:
+- Focus: Applying Gradient Descent within a logistic regression framework to predict diabetes onset.
 
-- **Perceptron**: Our gateway to linear classification models.
-- **Logistic Regression**: Employed for binary and multiclass classification challenges.
-- **Neural Network (MLP)**: Diving deep with multi-layer perceptrons.
-- **Decision/Regression Trees**: Navigating classification and regression via tree-based models.
-- **Ensemble Learning**: Leveraging the collective strength of methods like Random Forest.
-- **k-Nearest Neighbors (KNN)**: The quintessence of non-parametric classification.
+- Implementation: Optimization of logistic regression using Gradient Descent to minimize log loss, focusing on features such as glucose levels and BMI.
 
-### Unsupervised Learning
+- Outcome: The project highlights the efficacy of Gradient Descent in refining model parameters for enhanced predictive accuracy in healthcare applications.
 
-Here, we unravel the nuances of unsupervised learning methodologies:
+## **Gradient Descent - Logistic Regression on Wisconsin Breast Cancer Dataset:**
 
-- **k-Means Clustering**: Grouping data points with this clustering classic.
-- **DBSCAN**: Tackling spatial clustering challenges in data with noise.
-- **Principal Component Analysis (PCA)**: Reducing dimensionality to enhance feature understanding.
+- Focus: Classification of breast cancer tumors using logistic regression optimized through Gradient Descent.
 
-### Reinforcement Learning
+- Implementation: Logistic regression model trained on the Breast Cancer Wisconsin dataset, using features derived from cell nuclei to classify tumors as benign or malignant.
 
-Within this section, we embark on an exploration of reinforcement learning basics:
+- Outcome: The project showcases logistic regression's capability in medical diagnostics, optimized by Gradient Descent for high accuracy.
 
-- **Tabular Reinforcement Learning**: An introductory dive into the fundamentals of reinforcement learning.
+## **Multilayer Perceptron (MLP) in Neural Network Analysis:**
 
-### Datasets
+- Focus: Application of MLP to digit recognition using the MNIST dataset.
 
-The datasets folder contains various datasets used in our implementations:
+- Implementation: An MLP model implemented using TensorFlow and Keras, demonstrating the capability of neural networks in recognizing handwritten digits.
 
-- **COVID-19 Symptoms:** This dataset captures an array of symptoms and demographic details aimed at predicting COVID-19 infection statuses.
+- Outcome: The MLP excels in capturing complex patterns, offering insights into both the power and challenges of deep learning.
 
-- **Cancer Data:** A collection of attributes used to assess cancer risk or detect its presence.
+## **Reinforcement Learning with Decision Trees/Regression Trees:**
 
-- **Credit Card Customer Data:** Insights into customer profiles, vital for evaluating creditworthiness or designing financial products.
+- Focus: Integrating Decision Trees and Regression Trees within a reinforcement learning framework for diabetes risk prediction.
 
-- **Diabetes:** Medical records catering to the study of diabetes, facilitating the development of predictive models for diagnosis or progression of the disease.
+- Implementation: A combination of Decision Trees for classification and Regression Trees for continuous prediction, focusing on diabetes risk management.
 
-- **Fake Bills:** Features designed to distinguish genuine banknotes from counterfeit ones.
+- Outcome: The project explores the potential of tree-based models in dynamic decision-making processes within healthcare.
 
-- **MNIST Test:** The benchmark dataset for testing machine learning models on the task of handwritten digit recognition.
+## **Ensemble Learning for Diabetes Risk Prediction:**
 
-- **Penguins:** Ecological data related to penguin species, useful in biodiversity research and ecological modeling.
+- Focus: Leveraging ensemble learning methods like Bagging and Random Forest for predicting diabetes risk.
 
-- **Raw Data (COVID-19 Symptoms):** The preliminary dataset concerning COVID-19 symptoms, serving as a substrate for cleaning and detailed analysis.
+- Implementation: Use of multiple decision tree models to improve prediction stability and accuracy, addressing the complex patterns in medical data.
 
-## Repository Navigation
+- Outcome: Demonstrates the strength of ensemble methods in enhancing predictive performance and reducing overfitting.
 
-To delve into our projects, simply navigate to the designated folders for supervised learning, unsupervised learning, reinforcement learning, and datasets. Within each folder, you'll find comprehensive README.md files and Jupyter notebooks that bring our implementations to life.
+## **Reinforcement Learning Jupyter Notebook:**
 
-We extend our gratitude for your interest in our capstone project repository. It's our hope that you'll find the presented implementations and analyses both enlightening and meticulously organized.
+- Focus: Implementing the k-Nearest Neighbors algorithm to classify authentic and counterfeit bills.
 
----
+- Implementation: Application of k-NN to the Fake Bills dataset, focusing on features such as diagonal length and margins to predict bill authenticity.
 
-**Note**: This README serves as an overview of our repository. Detailed explanations, code, and analyses are available in the respective subdirectories.
+- Outcome: This project highlights k-NN's utility in classification and its potential in recommendation systems for enhancing security features.
+
+These projects collectively demonstrate the versatility of supervised learning techniques across different types of data and problem statements. Each project not only reinforces specific machine learning methodologies but also provides a platform for further exploration and refinement of these models in addressing practical challenges.

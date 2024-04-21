@@ -1,4 +1,4 @@
-# INDE 577 - Shaoyu Yan - Data Science & Machine Learning - Dataset Overview
+# Data Science & Machine Learning - Dataset Overview
 
 ## Repository Layout
 
