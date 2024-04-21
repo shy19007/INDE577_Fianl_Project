@@ -1,66 +1,51 @@
-# INDE 577 - Shaoyu Yan - Data Science & Machine Learning
+# **Reinforcement Learning**
 
-**Instructor**: Randy R. Davila
+## **Introduction**
 
-## Course Description
+Dive into the basics of Reinforcement Learning (RL), an area of Machine Learning that focuses on how agents ought to take actions in an environment to maximize the notion of cumulative reward. RL is uniquely suited for applications where the decision-making sequence is critical, such as our COVID-19 detection project, which uses RL to predict virus presence based on symptoms and demographics.
 
-Welcome to the capstone project repository for INDE 577 - Data Science and Machine Learning, led by Randy R. Davila. This course has traversed through an extensive array of data science and machine learning topics, spanning supervised, unsupervised, and reinforcement learning domains. Throughout this journey, we've engaged in hands-on applications, honed our Python programming skills, and embraced various data science methodologies.
+## **Fundamentals of Reinforcement Learning**
 
-## Repository Layout
+At its core, RL involves several key components that construct its framework:
 
-Our repository is structured to provide a comprehensive exploration of machine learning applications, divided into four pivotal sections, each replete with in-depth implementations and insightful analysis:
+- Agent: The learner or decision-maker.
+- Environment: Where the agent learns and makes decisions.
+- State (s): The current situation returned by the environment.
+- Action (a): What the agent decides to do.
+- Reward (r): Feedback from the environment used to guide learning.
+- Policy (π): The strategy the agent employs to determine its actions.
+- Episode: A sequence from the initial state to a terminal state.
 
-### Supervised Learning
+## **Application to COVID-19 Detection**
 
-This segment showcases our endeavors with various supervised learning techniques:
+Our project applies RL to the pressing issue of COVID-19 detection, utilizing a dataset of symptoms and patient demographics to train an RL agent. The project's goal is to develop an adaptive model that can make accurate predictions about infection based on available data.
 
-- **Perceptron**: Our gateway to linear classification models.
-- **Logistic Regression**: Employed for binary and multiclass classification challenges.
-- **Neural Network (MLP)**: Diving deep with multi-layer perceptrons.
-- **Decision/Regression Trees**: Navigating classification and regression via tree-based models.
-- **Ensemble Learning**: Leveraging the collective strength of methods like Random Forest.
-- **k-Nearest Neighbors (KNN)**: The quintessence of non-parametric classification.
+### **Project Scope**
 
-### Unsupervised Learning
+#### Objective
 
-Here, we unravel the nuances of unsupervised learning methodologies:
+Our objective is to harness RL to enhance prediction models for COVID-19 using symptom data. This approach leverages the dynamic learning capability of RL, allowing the model to improve as it processes more data.
 
-- **k-Means Clustering**: Grouping data points with this clustering classic.
-- **DBSCAN**: Tackling spatial clustering challenges in data with noise.
-- **Principal Component Analysis (PCA)**: Reducing dimensionality to enhance feature understanding.
+#### Dataset Overview
 
-### Reinforcement Learning
+We employ a dataset combining symptoms, demographic data, and exposure history. The RL model learns to identify patterns correlating these factors with COVID-19 infection probabilities.
 
-Within this section, we embark on an exploration of reinforcement learning basics:
+#### Challenges and Opportunities
 
-- **Tabular Reinforcement Learning**: An introductory dive into the fundamentals of reinforcement learning.
+While RL's adaptability is a significant advantage, it also presents challenges such as the need for extensive data interaction and the complexity of establishing an effective reward system. Despite these challenges, RL's capacity to adjust to new information makes it an excellent tool for managing data during a pandemic.
 
-### Datasets
+### **Methodology**
 
-The datasets folder contains various datasets used in our implementations:
+In a simulated environment, the agent makes predictions which are then assessed for accuracy. Correct predictions receive positive feedback, reinforcing the agent's ability to make reliable assessments over time.
 
-- **COVID-19 Symptoms:** This dataset captures an array of symptoms and demographic details aimed at predicting COVID-19 infection statuses.
+### **Practical Implementation**
 
-- **Cancer Data:** A collection of attributes used to assess cancer risk or detect its presence.
+A hypothetical example demonstrates the RL model in action: an agent initially guesses outcomes randomly but gradually learns from rewards and penalties to improve its predictions.
 
-- **Credit Card Customer Data:** Insights into customer profiles, vital for evaluating creditworthiness or designing financial products.
+### **Analysis and Future Directions**
 
-- **Diabetes:** Medical records catering to the study of diabetes, facilitating the development of predictive models for diagnosis or progression of the disease.
+Initial results may show variability, but as the agent learns, we expect its predictions to become more consistent and accurate. Future improvements will focus on refining the model and expanding the dataset to cover more variables.
 
-- **Fake Bills:** Features designed to distinguish genuine banknotes from counterfeit ones.
+## **Conclusion**
 
-- **MNIST Test:** The benchmark dataset for testing machine learning models on the task of handwritten digit recognition.
-
-- **Penguins:** Ecological data related to penguin species, useful in biodiversity research and ecological modeling.
-
-- **Raw Data (COVID-19 Symptoms):** The preliminary dataset concerning COVID-19 symptoms, serving as a substrate for cleaning and detailed analysis.
-
-## Repository Navigation
-
-To delve into our projects, simply navigate to the designated folders for supervised learning, unsupervised learning, reinforcement learning, and datasets. Within each folder, you'll find comprehensive README.md files and Jupyter notebooks that bring our implementations to life.
-
-We extend our gratitude for your interest in our capstone project repository. It's our hope that you'll find the presented implementations and analyses both enlightening and meticulously organized.
-
----
-
-**Note**: This README serves as an overview of our repository. Detailed explanations, code, and analyses are available in the respective subdirectories.
+This introduction to RL within the context of COVID-19 detection sets the stage for a deeper exploration of how reinforcement learning can play a pivotal role in real-world applications. Our ongoing efforts aim to refine this innovative approach, contributing to global pandemic management strategies through advanced machine learning techniques.
